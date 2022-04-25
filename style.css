@@ -1,0 +1,15 @@
+
+#title{
+    display: flex;
+    flex-direction: column;
+}
+#author{
+    display: flex;
+    flex-direction: column;
+}
+
+#add{
+    display: flex;
+    flex-direction: column;
+}
+
