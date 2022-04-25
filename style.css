@@ -1,19 +1,26 @@
 
-#title{
-    display: flex;
-    flex-direction: column;
-}
-#author{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+#title {
+  display: flex;
+  flex-direction: column;
 }
 
-#add{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+#author {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
+#add {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
 
+.test {
+  width: 425px;
+  margin-bottom: 15px;
+}
 
+p {
+  margin-top: -10px;
+}
