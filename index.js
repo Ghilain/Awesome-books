@@ -1,26 +1,15 @@
+/* eslint-disable  no-restricted-globals */
+/* eslint-disable  no-unused-vars */
 // Create Dom element
-
+const AddBook = document.querySelector('#displaybook');
 const addBooks = localStorage.getItem('adbooks');
 let books = [];
 
 if (addBooks) {
   books = JSON.parse(addBooks);
-} else {
-  const bookData = [
-    {
-      id: 1,
-      name: 'Lorem ipsum',
-      author: 'Testeroo Testyy',
-    },
-  ];
-
-  localStorage.setItem('adbooks', JSON.stringify(bookData));
-  books = JSON.parse(addBooks);
-  window.location.reload();
 }
 // Display book information
 
-const AddBook = document.querySelector('#displaybook');
 books.forEach((book) => {
   const newBook = `
   <p>${book.name}</p>
@@ -28,6 +17,7 @@ books.forEach((book) => {
   <button onclick=deleteBook(${book.id}) class="removebtn"> Remove</button>
   <hr>
   `;
+
   const bookDiv = document.createElement('div');
   bookDiv.classList.add('test');
   bookDiv.innerHTML = newBook;
@@ -36,20 +26,15 @@ books.forEach((book) => {
 // Remove button function
 
 function deleteBook(id) {
-  if (localStorage.getItem('adbooks') === null) {
-    books = books.filter((book) => {
-      if (id === book.id) {
-        return false;
-      }
-      return true;
-    });
-    localStorage.setItem('adbooks', JSON.stringify(books));
-    window.location.reload();
-  } else {
-    localStorage.removeItem('adbooks', JSON.stringify(books));
-  }
+  books = books.filter((book) => {
+    if (id === book.id) {
+      return false;
+    }
+    return true;
+  });
+  localStorage.setItem('adbooks', JSON.stringify(books));
+  window.location.reload();
 }
-document.addEventListener('DOMContentLoaded', deleteBook);
 // Add book information
 
 const addBtn = document.querySelector('#add');
