@@ -9,6 +9,10 @@ And happen every year.
 - HTML, CSS & JS
 - Hint, Stylelint, Eslint
 
+## Live Demo
+
+[Live](https://ghilain.github.io/Awesome-books/index.html)
+
 
 ## Getting Started
 
@@ -41,6 +45,12 @@ open the html file
 - GitHub: [Ghilain Iishimwe](https://github.com/Ghilain)
 - Twitter: [GhilainIshimwe](https://twitter.com/GhilainIshimwe)
 - LinkedIn: [Ghilain Ishimwe](https://www.linkedin.com/in/ghilain-ishimwe-067a5b1b4/)
+
+👤 **Shahnawaz Ali**
+
+- GitHub: [Shahnawaz Ali](https://github.com/shahnawaza75)
+- Twitter: Shahnawaz Ali
+- LinkedIn: Shahnawaz Ali
 
 ## 🤝 Contributing
 
