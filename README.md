@@ -1,8 +1,6 @@
-# KWITA IZINA CEREMONY 2022
+# Awesome Book
 
-The Kwita Izina gorilla naming ceremony is modelled off a centuries-old tradition
-in which Rwandans name their children in the presence of family and friends.
-And happen every year.
+The Awesome Book project allows users to add or remove their favorite books.
 
 ## Built With
 
