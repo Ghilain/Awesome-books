@@ -5,6 +5,13 @@ const AddBook = document.querySelector('#displaybook');
 const addBooks = localStorage.getItem('adbooks');
 let books = [];
 
+class bookData {
+  constructor(name, author, id) {
+    this.id = id;
+    this.name = name;
+    this.author = author;
+  }
+}
 if (addBooks) {
   books = JSON.parse(addBooks);
 }
@@ -45,11 +52,8 @@ addBtn.addEventListener('click', () => {
   if (books.length > 0) {
     id = books[books.length - 1].id + 1;
   }
-  books.push({
-    id,
-    name,
-    author,
-  });
+  const book = new bookData(name, author, id);
+  books.push(book);
   localStorage.setItem('adbooks', JSON.stringify(books));
   window.location.reload();
 });
